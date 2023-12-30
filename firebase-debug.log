@@ -1,0 +1,191 @@
+[debug] [2023-12-30T10:18:10.338Z] ----------------------------------------------------------------------
+[debug] [2023-12-30T10:18:10.339Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Johnmengistu\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2023-12-30T10:18:10.340Z] CLI Version:   13.0.2
+[debug] [2023-12-30T10:18:10.340Z] Platform:      win32
+[debug] [2023-12-30T10:18:10.340Z] Node Version:  v18.18.2
+[debug] [2023-12-30T10:18:10.341Z] Time:          Sat Dec 30 2023 13:18:10 GMT+0300 (East Africa Time)
+[debug] [2023-12-30T10:18:10.341Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-12-30T10:18:10.345Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-12-30T10:18:10.468Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-12-30T10:18:10.469Z] > authorizing via signed-in user (yohannesmengistu7@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2023-12-30T10:18:10.483Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-12-30T10:18:10.483Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2023-12-30T10:18:10.496Z] [hub] writing locator at C:\Users\JOHNME~1\AppData\Local\Temp\hub-client-ba23e.json
+[debug] [2023-12-30T10:18:10.529Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-12-30T10:18:10.529Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-12-30T10:18:10.530Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
+[debug] [2023-12-30T10:18:10.541Z] defaultcredentials: writing to file C:\Users\Johnmengistu\AppData\Roaming\firebase\yohannesmengistu7_gmail_com_application_default_credentials.json
+[debug] [2023-12-30T10:18:10.551Z] Setting GAC to C:\Users\Johnmengistu\AppData\Roaming\firebase\yohannesmengistu7_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\Johnmengistu\\AppData\\Roaming\\firebase\\yohannesmengistu7_gmail_com_application_default_credentials.json"}}
+[debug] [2023-12-30T10:18:10.552Z] > refreshing access token with scopes: []
+[debug] [2023-12-30T10:18:10.553Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-12-30T10:18:10.553Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-12-30T10:18:16.853Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2023-12-30T10:18:16.853Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2023-12-30T10:18:25.033Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-12-30T10:18:25.033Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-12-30T10:18:25.042Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/client-ba23e/adminSdkConfig [none]
+[debug] [2023-12-30T10:18:58.738Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/client-ba23e/adminSdkConfig 200
+[debug] [2023-12-30T10:18:58.738Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/client-ba23e/adminSdkConfig {"projectId":"client-ba23e","storageBucket":"client-ba23e.appspot.com"}
+[debug] [2023-12-30T10:18:58.798Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2023-12-30T10:18:58.799Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2023-12-30T10:18:58.800Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\Johnmengistu\\.cache\\firebase\\emulators\\ui-v1.11.7\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\Johnmengistu\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.11.7\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2023-12-30T10:18:58.991Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2023-12-30T10:18:58.992Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "D:\Evangadi\Phase-3\Projects\Amazon-frontend\Amazon-clone\amazon-backend\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"D:\\Evangadi\\Phase-3\\Projects\\Amazon-frontend\\Amazon-clone\\amazon-backend\\functions\" for Cloud Functions..."}}
+[debug] [2023-12-30T10:18:59.106Z] Validating nodejs source
+[debug] [2023-12-30T10:19:00.481Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "node index.js",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-12-30T10:19:00.482Z] Building nodejs source
+[debug] [2023-12-30T10:19:00.483Z] Failed to find version of module node: reached end of search path D:\Evangadi\Phase-3\Projects\Amazon-frontend\Amazon-clone\amazon-backend\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-12-30T10:19:00.490Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-12-30T10:19:00.507Z] Found firebase-functions binary at 'D:\Evangadi\Phase-3\Projects\Amazon-frontend\Amazon-clone\amazon-backend\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8850
+
+[debug] [2023-12-30T10:19:01.098Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] +  functions[us-central1-api]: http function initialized (http://127.0.0.1:5001/client-ba23e/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/client-ba23e/us-central1/api)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2023-12-30T10:20:11.519Z] Received signal SIGINT (Ctrl-C) 1
+[info]  
+[info] i  emulators: Received SIGINT (Ctrl-C) for the first time. Starting a clean shutdown. 
+[info] i  emulators: Please wait for a clean shutdown or send the SIGINT (Ctrl-C) signal again to stop right now. 
+[info] i  emulators: Shutting down emulators. {"metadata":{"emulator":{"name":"hub"},"message":"Shutting down emulators."}}
+[info] i  ui: Stopping Emulator UI {"metadata":{"emulator":{"name":"ui"},"message":"Stopping Emulator UI"}}
+[warn] !  Emulator UI has exited upon receiving signal: SIGINT 
+[info] i  functions: Stopping Functions Emulator {"metadata":{"emulator":{"name":"functions"},"message":"Stopping Functions Emulator"}}
+[info] i  eventarc: Stopping Eventarc Emulator {"metadata":{"emulator":{"name":"eventarc"},"message":"Stopping Eventarc Emulator"}}
+[info] i  hub: Stopping emulator hub {"metadata":{"emulator":{"name":"hub"},"message":"Stopping emulator hub"}}
+[info] i  logging: Stopping Logging Emulator {"metadata":{"emulator":{"name":"logging"},"message":"Stopping Logging Emulator"}}
+[debug] [2023-12-30T10:20:12.939Z] Received signal SIGINT (Ctrl-C) 2
+[info]  
+[debug] [2023-12-30T10:20:12.940Z] Skipping clean onExit() and cleanShutdown()
+[warn] !  emulators: Received SIGINT (Ctrl-C) 2 times. You have forced the Emulator Suite to exit without waiting for 0 subprocess to finish. These processes may still be running on your machine:  
+[info] 
+┌──────────┬───────────┬─────┐
+│ Emulator │ Host:Port │ PID │
+└──────────┴───────────┴─────┘
+
+To force them to exit run:
+
+[info] TASKKILL  /T
+
+[debug] [2023-12-30T10:20:14.382Z] Received signal SIGINT (Ctrl-C) 3
+[info]  
+[debug] [2023-12-30T10:20:14.383Z] Skipping clean onExit() and cleanShutdown()
+[warn] !  emulators: Received SIGINT (Ctrl-C) 3 times. You have forced the Emulator Suite to exit without waiting for 0 subprocess to finish. These processes may still be running on your machine:  
+[info] 
+┌──────────┬───────────┬─────┐
+│ Emulator │ Host:Port │ PID │
+└──────────┴───────────┴─────┘
+
+To force them to exit run:
+
+[info] TASKKILL  /T
+
+[debug] [2023-12-30T10:20:14.783Z] Received signal SIGINT (Ctrl-C) 4
+[info]  
+[debug] [2023-12-30T10:20:14.784Z] Skipping clean onExit() and cleanShutdown()
+[warn] !  emulators: Received SIGINT (Ctrl-C) 4 times. You have forced the Emulator Suite to exit without waiting for 0 subprocess to finish. These processes may still be running on your machine:  
+[info] 
+┌──────────┬───────────┬─────┐
+│ Emulator │ Host:Port │ PID │
+└──────────┴───────────┴─────┘
+
+To force them to exit run:
+
+[info] TASKKILL  /T
+
+[debug] [2023-12-30T10:20:15.018Z] Received signal SIGINT (Ctrl-C) 5
+[info]  
+[debug] [2023-12-30T10:20:15.018Z] Skipping clean onExit() and cleanShutdown()
+[warn] !  emulators: Received SIGINT (Ctrl-C) 5 times. You have forced the Emulator Suite to exit without waiting for 0 subprocess to finish. These processes may still be running on your machine:  
+[info] 
+┌──────────┬───────────┬─────┐
+│ Emulator │ Host:Port │ PID │
+└──────────┴───────────┴─────┘
+
+To force them to exit run:
+
+[info] TASKKILL  /T
+
+[debug] [2023-12-30T10:20:15.201Z] Received signal SIGINT (Ctrl-C) 6
+[info]  
+[debug] [2023-12-30T10:20:15.202Z] Skipping clean onExit() and cleanShutdown()
+[warn] !  emulators: Received SIGINT (Ctrl-C) 6 times. You have forced the Emulator Suite to exit without waiting for 0 subprocess to finish. These processes may still be running on your machine:  
+[info] 
+┌──────────┬───────────┬─────┐
+│ Emulator │ Host:Port │ PID │
+└──────────┴───────────┴─────┘
+
+To force them to exit run:
+
+[info] TASKKILL  /T
+
+[debug] [2023-12-30T10:20:17.590Z] Received signal SIGINT (Ctrl-C) 7
+[info]  
+[debug] [2023-12-30T10:20:17.591Z] Skipping clean onExit() and cleanShutdown()
+[warn] !  emulators: Received SIGINT (Ctrl-C) 7 times. You have forced the Emulator Suite to exit without waiting for 0 subprocess to finish. These processes may still be running on your machine:  
+[info] 
+┌──────────┬───────────┬─────┐
+│ Emulator │ Host:Port │ PID │
+└──────────┴───────────┴─────┘
+
+To force them to exit run:
+
+[info] TASKKILL  /T
+
+[debug] [2023-12-30T10:20:21.571Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\Johnmengistu\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:258:49)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+[error] 
+[error] Error: An unexpected error has occurred.
